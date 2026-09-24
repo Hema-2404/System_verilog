@@ -1,0 +1,13 @@
+module test;
+
+  logic [7:0] data;
+
+  initial begin
+    data = 8'b10110011;
+
+    $display("data = %b", data);
+    $display("data[7] = %b", data[7]);
+    $display("data[3:0] = %b", data[3:0]);
+  end
+
+endmodule
