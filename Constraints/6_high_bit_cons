@@ -1,0 +1,6 @@
+class high;
+  rand bit [31:0]data;
+  constraint c1{
+    $countones(data)==1;
+  }
+endclass
