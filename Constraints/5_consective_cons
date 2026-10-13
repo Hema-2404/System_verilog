@@ -1,0 +1,6 @@
+class consecutive;
+  rand bit [16:0]data;
+  constraint c1{
+    (data &(data<<1))==0;
+     }
+     endclass
