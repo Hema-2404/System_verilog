@@ -1,0 +1,7 @@
+class variable;
+  rand bit [60:0] data;
+  constraint c1 {
+    [31:0] == 32'hFFFFFFFF;
+    [62:32]==29'b0; 
+  }
+endclass
