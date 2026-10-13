@@ -1,0 +1,8 @@
+class example;
+  rand bit [31:0] data;
+
+  constraint c1 {
+    $countones(data) == 12;
+    (data & (data << 1)) == 0;
+  }
+endclass
