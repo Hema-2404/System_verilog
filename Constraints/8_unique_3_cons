@@ -1,0 +1,13 @@
+class unique_3;
+  rand bit[7:0] data[10];
+  constraint c1{
+    foreach (data[i])
+    data[i]%3 ==0;
+  }
+  constraint c2{
+    foreach (data[i])
+      foreach (data[j])
+        if(i!=j)
+          data[i]!= data[j];
+  }
+endclass
