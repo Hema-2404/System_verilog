@@ -1,0 +1,11 @@
+class even_odd;
+
+  rand bit [7:0] data[10];
+
+  constraint c1 {
+    foreach (data[i])
+      if (i % 2 == 0)
+        data[i] % 2 == 0;
+  }
+
+endclass
