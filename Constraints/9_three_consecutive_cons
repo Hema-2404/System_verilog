@@ -1,0 +1,8 @@
+class three_consecutive_numbers;
+  rand bit [7:0] data[10];
+  constraint c1 {
+    foreach (data[i])
+      if (i<8)
+        (data[i]+data[i+1]+data[i+2])%2==0;
+  }
+endclass
