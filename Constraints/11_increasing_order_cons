@@ -1,0 +1,8 @@
+class increasing_value;
+  rand bit [7:0] data[5];
+  constraint c1 {
+    foreach (data[i])
+      if (i<4)
+    data[i]<data[i+1];
+           }
+           endclass
