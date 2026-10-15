@@ -1,0 +1,11 @@
+class palindrome_sequence;
+  rand bit [2:0] data[10];
+  constraint c1{
+    foreach (data[i]){
+      if (i<5)
+        data[i]==i+1;
+    else
+      data[i]==10-i;
+  }
+  }
+    endclass
