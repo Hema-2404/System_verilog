@@ -1,0 +1,8 @@
+class alternative;
+  rand bit [9:0] data;
+  constraint c1{
+    foreach (data[i])
+      if (i<9)
+        data[i]!=data[i+1];
+         }
+         endclass
