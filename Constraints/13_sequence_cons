@@ -1,0 +1,9 @@
+class sequence_gen;
+  rand bit [3:0]data[10];
+  constraint c1{
+    foreach (data[i])
+      data[i]==(i/2)+1;
+  }
+  endclass
+  
+  
