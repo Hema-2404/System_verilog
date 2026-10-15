@@ -1,0 +1,8 @@
+class even_number;
+  rand int data;
+  constraint even{
+    data inside {[10:30]};
+    data%2==0;
+  }
+endclass
+      
