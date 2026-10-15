@@ -1,0 +1,11 @@
+class alternating_sequence;
+  rand integer data[6];
+  constraint c1{
+    foreach (data[i]){
+      if (i%2 ==0)
+        data[i]==i*-5;
+     else
+       data[i]==i*5;
+    }
+  }
+      endclass
